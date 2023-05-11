@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+{% block title %}
+{% endblock title %}
+     About
+{% block body %}
+		<!-- content --> 
+		<div id="content">
+			<!-- page-banner -->
+			<div class="section-content page-banner about-page-banner">
+				<div class="container">
+					<h1>A Propos</h1>
+				</div>
+			</div>
+
+			<!-- start team-section -->
+			<div class="section-content team-section">
+				<div class="title-section white">
+					<div class="container triggerAnimation animated" data-animate="bounceIn">
+						<h1>M.G.M.I</h1>
+						<h2>Nous ne sommes pas les seuls cependant<br> Nous sommes toujours les meilleurs.</h2>
+						<h3>Bienvenue à M.G.M.I <br> M.G.M.I Marbre a été fondée <br>En 1983 à Marrakech.</h3>
+					</div>
+				</div>
+			</div>
+            <!-- end team-section -->
+			<!-- start banner-section -->
+			<div class="section-content banner-section">
+				<div class="container triggerAnimation animated" data-animate="bounceIn">
+					<h1>Spécialisé dans le domaine du marbre et du granit</h1>
+					<h5>La qualité ensemble est le meilleur prix.</h5>
+				</div>
+				<div class="image-place triggerAnimation animated" >
+					<div class="container ">
+						<img src="{% static 'images/dev1.png' %}" alt="">
+						<img src="{% static 'images/dev2.png' %}" alt="">
+					</div>				
+				</div>
+			</div>
+			<div class="section-content banner-section">
+				<div class="container triggerAnimation animated" data-animate="bounceIn">
+					
+				</div>
+				<div class="image-place triggerAnimation animated" >
+					<div class="container ">
+						<img src="{% static 'images/dev3.png' %}" alt="">
+						<img src="{% static 'images/dev4.png' %}" alt="">
+					</div>				
+				</div>
+			</div>
+           <!-- end banner-section -->
+			<!-- statistic-section2
+				================================================== -->
+			<div class="section-content statistic-section2">
+				<div class="title-section white">
+					<div class="container triggerAnimation animated" data-animate="bounceIn">
+						<h1>Spécialisé dans le domaine du marbre et du granit</h1>
+					<h5>La qualité ensemble est le meilleur prix.</h5>
+					</div>
+					<div class="image-place triggerAnimation animated" >
+						<div class="container ">
+							<img src="{% static 'images/dev5.png' %}" alt="">
+						</div>				
+					</div>
+				</div>
+				
+				
+				<div class="container">
+					<div class="statistic-box style2 triggerAnimation animated" data-animate="tada">
+						<div class="statistic-post">
+							<div class="statistic-counter">
+								<i class="fa fa-heart-o"></i>
+								<p><span class="timer" data-from="0" data-to="256"></span></p>
+								<p>Projets Finis</p>
+								<p>50</p>
+							</div>
+						</div>
+						<div class="statistic-post">
+							<div class="statistic-counter">
+								<i class="fa fa-heart-o"></i>
+								<p><span class="timer" data-from="0" data-to="256"></span></p>
+								<p>PPoints Forts</p>
+								<p>50</p>
+							</div>
+						</div>
+						<div class="statistic-post">
+							<div class="statistic-counter">
+								<i class="fa fa-star-o"></i>
+								<p><span class="timer" data-from="0" data-to="28"></span></p>
+								<p>Clients Satisfaits</p>
+								<p>+50</p>
+							</div>
+						</div>
+						<div class="statistic-post">
+							<div class="statistic-counter">
+								<i class="fa fa-bell-o"></i>
+								<p><span class="timer" data-from="0" data-to="759"></span></p>
+								<p>Idées e Créativité</p>
+								<p>+17</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End content -->
+
+{% endblock body %}

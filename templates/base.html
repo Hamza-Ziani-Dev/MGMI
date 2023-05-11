@@ -1,0 +1,200 @@
+{% load static %}
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<title>{% block title %}{% endblock title %}</title>
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,300,100,200' rel='stylesheet' type='text/css'>
+
+
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" media="screen">	
+    <!-- REVOLUTION BANNER CSS SETTINGS -->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/settings.css' %}" media="screen" />
+	<link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.css' %}" media="screen">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/owl.theme.css' %}" media="screen">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/jquery.bxslider.css' %}" media="screen">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/magnific-popup.css' %}" media="screen">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.css' %}" media="screen">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}" media="screen">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" media="screen">
+	
+	
+
+</head>
+<body>
+	<!-- Container -->
+	<div id="container">
+		<!-- Header
+		    ================================================== -->
+		<header class="clearfix">
+			<!-- Static navbar -->
+			<div class="navbar navbar-default navbar-fixed-top">			
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="{% url 'home:home' %}"><img alt="" src="{% static 'images/logo.png' %}"></a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="drop"><a class="active" href="{% url 'home:home' %}">Home</a></li>
+							<li class="drop"><a href="{% url 'about:about' %}">About Us</a></li>
+							<li><a href="{% url 'categories:categories' %}">Categories</a></li>
+							<li><a href="{% url 'contact:contact' %}">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- End Header -->
+
+		{% block body %}
+
+		{% endblock body %}
+		<!-- footer 
+			================================================== -->
+		<footer>
+			<div class="social-section">
+				<ul class="social-icons triggerAnimation animated" data-animate="tada">
+					<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a class="pinterest" href="#"><i class="fa fa-instagram"></i></a></li>
+				</ul>
+			</div>
+			<div class="up-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="widget footer-widget text-widget">
+								<h1>About</h1>
+								<p>Une carrière qui allie savoir-faire et expérience au service de clients exigeants. </p>
+								<p>La qualité ensemble est le meilleur prix. </p>
+								<img alt="" src="{% static 'images/logo.png' %}">
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="widget footer-widget tweets-widget">
+								<h1>Recent Tweets</h1>
+								<ul>
+									<li>
+										<i class="fa fa-twitter"></i>
+										<p>Twitter- <a href="#"></a> </p>
+										<span>15 Jun 2022</span>
+									</li>
+									<li>
+										<i class="fa fa-facebook"></i>
+										<p>Facebook -  <a href="#"></a> </p>
+										<span>20 Mar 2023</span>
+									</li>
+									<li>
+										<i class="fa fa-instagram"></i>
+										<p>Instagram-  <a href="#"></a> </p>
+										<span>10 Dec 2022</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="widget footer-widget flickr-widget">
+								<h1>Projects</h1>
+								<ul class="flickr">
+									<li><a href="#"><img alt="" src="{% static 'projects/project1.png' %}"></a></li>
+									<li><a href="#"><img alt="" src="{% static 'projects/project2.png' %}"></a></li>
+									<li><a href="#"><img alt="" src="{% static 'projects/project3.png' %}"></a></li>
+									<li><a href="#"><img alt="" src="{% static 'projects/project4.png' %}"></a></li>
+									<li><a href="#"><img alt="" src="{% static 'projects/project5.png' %}"></a></li>
+									<li><a href="#"><img alt="" src="{% static 'projects/project6.png' %}"></a></li>
+									<li><a href="#"><img alt="" src="{% static 'projects/project7.png' %}"></a></li>
+									<li><a href="#"><img alt="" src="{% static 'projects/project8.png' %}"></a></li>
+									<li><a href="#"><img alt="" src="{% static 'projects/project9.png' %}"></a></li>
+									<li><a href="#"><img alt="" src="{% static 'projects/project10.png' %}"></a></li>
+									<li><a href="#"><img alt="" src="{% static 'projects/project11.png' %}"></a></li>
+									<li><a href="#"><img alt="" src="{% static 'projects/project12.png' %}"></a></li>
+								</ul>
+							</div>							
+						</div>
+
+						<div class="col-md-3">
+							<div class="widget footer-widget subscribe-widget">
+								<h1>Subscribe</h1>
+								<p>Une carrière qui allie savoir-faire et expérience au service de clients exigeants. </p>
+								<form class="subscribe-form">
+									<input type="text" id="e-mail" name="e-mail" placeholder="Email Address"/>
+									<input type="submit" id="submit" value="submit"/>
+								</form>
+							</div>							
+						</div>
+
+					</div>
+					<div class="footer-line">
+						<p>Copyright 2023. "marble" by M.G.M.I All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+
+		</footer>
+		<!-- End footer -->
+	</div>
+	<!-- End Container -->
+	<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.migrate.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.bxslider.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.appear.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.stellar.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.imagesloaded.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.isotope.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/retina-1.1.0.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/plugins-scroll.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/waypoint.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+	<!-- THE SCRIPT INITIALISATION -->
+    <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+    <script type="text/javascript" src="{% static 'js/jquery.themepunch.plugins.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.themepunch.revolution.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+	<!-- LOOK THE DOCUMENTATION FOR MORE INFORMATIONS -->
+	<script type="text/javascript">
+
+		var revapi;
+
+		jQuery(document).ready(function() {
+
+			   revapi = jQuery('.tp-banner').revolution(
+				{
+					delay:6000,
+					startwidth:1170,
+					startheight:738,
+					hideThumbs:10,
+					fullWidth:"on",
+					forceFullWidth:"on",
+					navigationType:"bullet",
+					navigationArrows:"solo",
+					onHoverStop:"off",
+					navigationVOffset:60,
+					hideThumbsOnMobile:"on",
+					hideBulletsOnMobile:"on",
+					hideArrowsOnMobile:"on"
+
+				});
+
+		});	//ready
+
+	</script>
+	<!-- END REVOLUTION SLIDER -->
+</body>
+
+<!-- Mirrored from nunforest.com/marble-demo/default/home2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Jan 2023 14:28:05 GMT -->
+</html>

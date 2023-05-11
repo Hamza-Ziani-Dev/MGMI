@@ -1,0 +1,185 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+{% block title %}
+{% endblock title %}
+     Categories
+{% block body %}
+	<!-- Container -->
+	<div id="container">
+
+		<!-- content 
+			================================================== -->
+		<div id="content">
+			<!-- page-banner 
+				================================================== -->
+			<div class="section-content page-banner portfolio-page-banner">
+				<div class="container">
+					<h1>Categories</h1>
+				</div>
+			</div>
+
+			<!-- Start Categories-section  -->
+			<div class="section-content portfolio-section">
+				<div class="title-section white">
+					<div class="container">
+						<h1>Categories </h1>
+						<p>touts les Categories et Produits</p>
+					</div>
+				</div>
+				<div class="portfolio-box">
+					<ul class="filter">
+						<li><a href="#" class="active" data-filter="*">All</a></li>
+						<li><a href="#" data-filter=".ardoise">Ardoise</a></li>
+						<li><a href="#" data-filter=".marbrelocal">Marbre Local</a></li>
+						<li><a href="#" data-filter=".illustration">Granite</a></li>
+						<li><a href="#" data-filter=".branding">Marbre D'Importation</a></li>
+					</ul>
+					<div class="masonry three-col">
+          
+						<div class="project-post web-design branding">
+							<div class="project-gal">
+								<img alt="" src="{% static 'categories/ardoise.png' %}">
+								<div class="hover-box">
+									<a class="zoom" href="{% static 'categories/ardoise.png' %}"><i class="fa fa-search-plus"></i></a>
+									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
+								</div>
+							</div>
+							<div class="project-content">
+								<h2>Ardoise</h2>
+								<p>Vestibulum auctor dapibus neque.</p>
+							</div>
+						</div>
+          
+						<div class="project-post web-design">
+							<div class="project-gal">
+								<img alt="" src="{% static 'categories/marbrelocal.png' %}">
+								<div class="hover-box">
+									<a class="zoom" href="{% static 'categories/marbrelocal.png' %}"><i class="fa fa-search-plus"></i></a>
+									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
+								</div>
+							</div>
+							<div class="project-content">
+								<h2>Marbre Local</h2>
+								<p>Marbre Local</p>
+							</div>
+						</div>
+          
+						<div class="project-post photography branding">
+							<div class="project-gal">
+								<img alt="" src="{% static 'categories/granite.png' %}">
+								<div class="hover-box">
+									<a class="zoom" href="{% static 'categories/granite.png' %}"><i class="fa fa-search-plus"></i></a>
+									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
+								</div>
+							</div>
+							<div class="project-content">
+								<h2>Granite</h2>
+								<p>granite</p>
+							</div>
+						</div>
+          
+						<div class="project-post illustration">
+							<div class="project-gal">
+								<img alt="" src="{% static 'categories/marbreartificiel.png' %}">
+								<div class="hover-box">
+									<a class="zoom" href="{% static 'categories/marbreartificiel.png' %}"><i class="fa fa-search-plus"></i></a>
+									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
+								</div>
+							</div>
+							<div class="project-content">
+								<h2>Marbre Artificiel</h2>
+								<p>Marbre Artificiel</p>
+							</div>
+						</div>
+          
+						<div class="project-post photography">
+							<div class="project-gal">
+								<img alt="" src="{% static 'categories/pierrenoble1.png' %}">
+								<div class="hover-box">
+									<a class="zoom" href="{% static 'categories/pierrenoble1.png' %}"><i class="fa fa-search-plus"></i></a>
+									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
+								</div>
+							</div>
+							<div class="project-content">
+								<h2>Pierre Noble</h2>
+								<p>Pierre Noble</p>
+							</div>
+						</div>
+          
+						<div class="project-post illustration branding">
+							<div class="project-gal">
+								<img alt="" src="{% static 'categories/marbredimportation.png' %}">
+								<div class="hover-box">
+									<a class="zoom" href="{% static 'categories/marbredimportation.png' %}"><i class="fa fa-search-plus"></i></a>
+									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
+								</div>
+							</div>
+							<div class="project-content">
+								<h2>Marbre D'Importation</h2>
+								<p>Marbre D'Importation</p>
+							</div>
+						</div>
+          
+						<div class="project-post photography illustration">
+							<div class="project-gal">
+								<img alt="" src="{% static 'categories/marbrenatural.png' %}">
+								<div class="hover-box">
+									<a class="zoom" href="{% static 'categories/marbrenatural.png' %}"><i class="fa fa-search-plus"></i></a>
+									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
+								</div>
+							</div>
+							<div class="project-content">
+								<h2>Marbre Natural</h2>
+								<p>Marbre Natural</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- End Categories-section  -->
+
+
+
+			<!-- Start client-section -->
+			<div class="section-content client-section">
+				<div class="title-section">
+					<div class="container">
+						<h1>Our Prestigious clients</h1>
+						<p>Praesent placerat risus quis eros.</p>
+					</div>
+				</div>
+				<div class="container">
+					<ul class="bxslider">
+						<li>
+							<ul class="client-list">
+								<li><a href="#"><img alt="" src="{% static 'images/client1.png' %}"></a></li>
+								<li><a href="#"><img alt="" src="{% static 'images/client2.png' %}"></a></li>
+								<li><a href="#"><img alt="" src="{% static 'images/client3.png' %}"></a></li>
+								<li><a href="#"><img alt="" src="{% static 'images/client4.png' %}"></a></li>
+								<li><a href="#"><img alt="" src="{% static 'images/client1.png' %}"></a></li>
+								<li><a href="#"><img alt="" src="{% static 'images/client2.png' %}"></a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="client-list">
+								<li><a href="#"><img alt="" src="{% static 'images/client1.png'}}"></a></li>
+								<li><a href="#"><img alt="" src="{% static 'images/client2.png' %}"></a></li>
+								<li><a href="#"><img alt="" src="{% static 'images/client3.png' %}"></a></li>
+								<li><a href="#"><img alt="" src="{% static 'images/client4.png' %}"></a></li>
+								<li><a href="#"><img alt="" src="{% static 'images/client1.png' %}"></a></li>
+								<li><a href="#"><img alt="" src="{% static 'images/client2.png' %}"></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<!-- End content -->
+	</div>
+	<!-- End Container -->
+
+
+	{% endblock body %}

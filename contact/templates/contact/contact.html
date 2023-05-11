@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title  %}
+CONTACT
+{% endblock title  %}
+{% block body %}
+<!-- content 
+			================================================== -->
+            <div id="content">
+                <!-- page-banner 
+                    ================================================== -->
+                <div class="section-content page-banner contact-page-banner">
+                    <div class="container">
+                        <h1>Contact</h1>
+                    </div>
+                </div>
+                <!-- contact section 
+                    ================================================== -->
+                <div class="section-content contact-section">
+                    <div class="title-section">
+                        <div class="container triggerAnimation animated" data-animate="bounceIn">
+                            <h1>Contactez Nous</h1>
+                        </div>
+                    </div>
+                    <div class="map triggerAnimation animated" data-animate="slideInLeft"></div>
+                    <div class="contact-info triggerAnimation animated" data-animate="flipInX">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <a href="#"><i class="fa fa-map-marker"></i></a>
+                                    <h2>Address</h2>
+                                    <p>
+                                        <span>{{myinfo.place}}</span>
+                                    </p>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="#"><i class="fa fa-phone"></i></a>
+                                    <h2>Telephone</h2>
+                                    <p>
+                                        <span>{{myinfo.phone_number}}</span>
+                                        
+                                    </p>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="#"><i class="fa fa-envelope-o"></i></a>
+                                    <h2>Email</h2>
+                                    <p>
+                                        <span>{{myinfo.email}}</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-area">
+                        <div class="title-section">
+                            <div class="container triggerAnimation animated" data-animate="bounceIn">
+                                <h1>Send a message</h1>
+                                
+                            </div>
+                        </div>
+                        <form id="contact-form" method="post">
+                            {% csrf_token %}
+                            <div class="container triggerAnimation animated">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input name="subject" id="subject" type="text" placeholder="Subject (required)">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input name="email" id="email" type="text" placeholder="Email (required)">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input name="message" id="message" type="text" placeholder="message">
+                                    </div>
+                                </div>
+                                <div class="submit-area">
+                                    <input type="submit"  value="Submit">
+                                    <div id="msg" class="message"></div>								
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+    
+                </div>
+    
+            </div>
+            <!-- End content -->
+    
+
+{% endblock body %}
